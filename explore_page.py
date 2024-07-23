@@ -29,7 +29,7 @@ def clean_education(x):
 
 st.cache_resource
 def load_data():
-    df = pd.read_csv(".ipynb_checkpoints\survey_results_public.csv")
+    df = pd.read_csv("survey_results_public.csv")
 
     df = df[["Country", "EdLevel", "YearsCodePro", "Employment", "ConvertedCompYearly"]]
     df = df[df["ConvertedCompYearly"].notnull()]
